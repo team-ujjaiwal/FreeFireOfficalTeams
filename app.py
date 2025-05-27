@@ -6,13 +6,13 @@ from io import BytesIO
 app = Flask(__name__)
 
 # Fixed background image
-DEFAULT_BG_URL = "https://iili.io/3e5EJat.jpg"
+DEFAULT_BG_URL = "https://iili.io/3e5Wzsj.jpg"
 VALID_KEY = "1weekkeysforujjaiwal"  # your required key
 
 def get_outfit_image(uid, region):
     try:
         # DO NOT pass 'key' to external API
-        outfit_url = f"https://aditya-outfit-v3op.onrender.com/outfit-image?uid={uid}&region={region}&bg={DEFAULT_BG_URL}"
+        outfit_url = f"https://aditya-outfit-v6op.onrender.com/outfit-image?uid={uid}&region={region}&bg={DEFAULT_BG_URL}"
         response = requests.get(outfit_url)
 
         # Check if response is a valid image
